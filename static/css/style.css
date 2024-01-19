@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#navbar {
+    color: white;
+}
+
+#navbar-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    float: right;
+}
+
+#navbar-nav a {
+    margin-right: 18px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+}
+
+#navbar-nav a::before {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #ff4400a0;
+    transition: width 0.3s, left 0.3s;
+    transform-origin: 0 50%;
+}
+
+#navbar-nav a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Add media query for small screens (up to 767px width) */
+
+@media (max-width: 767px) {
+    #navbar-nav ul {
+        flex-direction: column;
+        /* Stack items in a column */
+        align-items: flex-end;
+        /* Align items to the right */
+    }
+    #navbar-nav a {
+        margin-right: 0;
+        /* Remove right margin for stacked items */
+        margin-bottom: 10px;
+        /* Add bottom margin for spacing between stacked items */
+    }
+}
+
+.carousel-item img {
+    object-fit: cover;
+    object-position: top;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.old_price {
+    font-weight: bold;
+    color: red;
+}
+
+.new_price {
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+
+.pic-box {
+    position: relative;
+}
+
+.hot {
+    background-color: orangered;
+    color: white;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    display: inline;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 10;
+}
