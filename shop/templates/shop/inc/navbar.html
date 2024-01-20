@@ -1,6 +1,7 @@
+{% load static %}
 <nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top" style="font-size: 18px;" id="navbar">
     <div class="container">
-        <a class="navbar-brand" href="{% url 'home' %}" style="font-size: 30px; font-weight:bold;"><img src="static/images/AM.png" width="48" height="30" class="d-inline-block align-text-top">
+        <a class="navbar-brand" href="{% url 'home' %}" style="font-size: 30px; font-weight:bold;"><img src="{% static 'images/AM.png' %}" width="48" height="30" class="d-inline-block align-text-top">
             <span style="color: #ff4400bd;"> Asharaf</span> Mart
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

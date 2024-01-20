@@ -49,24 +49,6 @@ a {
     text-decoration: none;
 }
 
-
-/* Add media query for small screens (up to 767px width) */
-
-@media (max-width: 767px) {
-    #navbar-nav ul {
-        flex-direction: column;
-        /* Stack items in a column */
-        align-items: flex-end;
-        /* Align items to the right */
-    }
-    #navbar-nav a {
-        margin-right: 0;
-        /* Remove right margin for stacked items */
-        margin-bottom: 10px;
-        /* Add bottom margin for spacing between stacked items */
-    }
-}
-
 .carousel-item img {
     object-fit: cover;
     object-position: top;
